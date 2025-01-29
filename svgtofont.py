@@ -23,4 +23,4 @@ def ttf_to_glyphmap(ttf_path, output_json):
     print(f"Glyphmap saved to {output_json}")
 
 # Usage
-ttf_to_glyphmap('lucide.ttf', 'glyphmaps.json')
+ttf_to_glyphmap('font/material-symbols.ttf', 'glyphmaps.json')

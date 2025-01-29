@@ -1,7 +1,11 @@
 {
   "name": "convert",
   "module": "index.js",
-  "type": "module",
+  "type": "commonjs",
+  "scripts": {
+    "svgo": "npx svgo --folder copied_icons --output copied_icons --config=svgo.config.js",
+    "svgfont": "npx svgtofont --sources ./copied_icons --output ./font --fontName material-symbols --normalize --centerHorizontally"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -12,5 +16,10 @@
     "glob": "^11.0.1",
     "svgo": "^3.3.2",
     "svgtofont": "^6.2.0"
+  },
+  "svgtofont": {
+    "css": {
+      "fontSize": "24px"
+    }
   }
 }

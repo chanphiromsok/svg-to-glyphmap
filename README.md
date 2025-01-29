@@ -1,15 +1,18 @@
-# convert
-
-To install dependencies:
-
-```bash
-bun install
+```javascript
+bun run index.js // Copy the external icons source
+bun svgo // Optimized your svg icons after copied folder name copied_icons
+bun svgfont // convert your optimized svg to font include .ttf .css .json .scss ...etc
+python3 svgtofont.py // generate glyphmaps.json after that can copy to expo-project [YOUR-FONT].ttf and glyphmaps.json
 ```
 
-To run:
 
-```bash
-bun run index.ts
+### Usage in react-native-vectoricons
 ```
-
-This project was created using `bun init` in bun v1.1.24. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+glypmaps.json
+import { createIconSet } from "@react-native-vector-icons/common";
+import glypaps from "./glypmaps.json"
+const Lucide = createIconSet(,
+  "lucide", //postScriptName
+  "lucide" // fontFileName
+);
+```
