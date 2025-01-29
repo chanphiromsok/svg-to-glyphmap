@@ -8,10 +8,10 @@ python3 svgtofont.py // generate glyphmaps.json after that can copy to expo-proj
 
 ### Usage in react-native-vectoricons
 ```
-glypmaps.json
+glyphmaps.json
 import { createIconSet } from "@react-native-vector-icons/common";
-import glypaps from "./glypmaps.json"
-const Lucide = createIconSet(,
+import glyphmaps from "./glyphmaps.json"
+const Lucide = createIconSet(glyphmaps,
   "lucide", //postScriptName
   "lucide" // fontFileName
 );
