@@ -174,5 +174,5 @@ dist
 # Finder (MacOS) folder config
 .DS_Store
 # Ignore the copy svg source because ignore is better than allow git in vscode to check many files will freeze your laptop
-copied_icons
+# copied_icons
 font
