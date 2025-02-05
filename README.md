@@ -1,5 +1,7 @@
 ```javascript
+bun run extra-icons.js // if you wan to add your custom icons
 bun run index.js // Copy the external icons source
+
 bun svgo // Optimized your svg icons after copied folder name copied_icons
 bun svgfont // convert your optimized svg to font include .ttf .css .json .scss ...etc
 python3 svgtofont.py // generate glyphmaps.json after that can copy to expo-project [YOUR-FONT].ttf and glyphmaps.json
