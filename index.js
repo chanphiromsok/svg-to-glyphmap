@@ -16,7 +16,7 @@ glob(`${baseDir}/*/`) // Match folders like "test2/1x_mobiledata/"
       const expectedFilePath = path.join(
         folderPath,
         "materialsymbolsrounded",
-        `${folderName}_wght200_24px.svg`
+        `${folderName}_wght300_20px.svg`
       );
 
       // Check if the file exists
